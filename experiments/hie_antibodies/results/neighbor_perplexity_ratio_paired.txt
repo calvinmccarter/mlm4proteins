@@ -1,0 +1,10 @@
+Per-mutated-position perplexity ratio  (neighbor residue / seed residue, geometric mean)
+
+Antibody      Sapiens  AbLang2   ESM2
+c143             88.4   1123.0  124.0
+mab114           70.6   1141.9   74.8
+mab114_uca      175.8   6837.3  175.1
+medi8852        119.3   1420.3   87.0
+medi8852_uca    173.3   8668.2   94.4
+regn10987       150.1   3189.8  191.5
+s309            119.5   1826.4  238.2

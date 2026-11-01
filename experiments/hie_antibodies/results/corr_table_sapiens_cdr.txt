@@ -1,0 +1,8 @@
+Antibody      Approx_Pearson  Approx_Spearman  Gumbel_Pearson  Gumbel_Spearman
+c143                   0.977            0.971           0.856            0.837
+mab114                 0.939            0.933           0.811            0.809
+mab114_uca             0.964            0.946           0.805            0.661
+medi8852               0.913            0.828           0.803            0.693
+medi8852_uca           0.912            0.778           0.717            0.503
+regn10987              0.866            0.887           0.719            0.663
+s309                   0.886            0.898           0.763            0.753

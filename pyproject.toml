@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mmmlm"
+version = "0.1.0"
+description = "Reference implementation: stochastic beam search for MLM-based protein optimization"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    "torch>=2.2",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "scikit-learn>=1.3",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+ablang2 = ["ablang2"]
+esm2 = ["transformers>=4.40", "fair-esm"]
+trastuzumab = ["matplotlib>=3.7", "seaborn>=0.13"]
+dev = ["pytest>=7", "pytest-xdist"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"

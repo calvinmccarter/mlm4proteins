@@ -1,0 +1,59 @@
+{
+  "oracle_checkpoint": "experiments/trastuzumab_cdrh3/checkpoints/cnn.pt",
+  "guidance_checkpoint": "experiments/trastuzumab_cdrh3/checkpoints/cnn_mason.pt",
+  "out_dir": "/home/ssm-user/sandbox/mmmlm/experiments/trastuzumab_cdrh3/results",
+  "edit_budgets": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "n_final": 200,
+  "beam_keep": 2000,
+  "beam_forward": 20,
+  "beam_keep_guided": 200,
+  "beam_forward_guided": 40,
+  "temperature": 1.5,
+  "gibbs_temperature": 1.0,
+  "gibbs_n": 200,
+  "gibbs_max_steps": null,
+  "seed": 0,
+  "models": [
+    "esm2",
+    "ablang2",
+    "proteinmpnn",
+    "abmpnn"
+  ],
+  "proteinmpnn_dir": "/home/ssm-user/sandbox/ProteinMPNN",
+  "structure": "/home/ssm-user/sandbox/mmmlm/experiments/trastuzumab_cdrh3/structures/1N8Z.pdb",
+  "structure_vh_chain": "B",
+  "structure_context_chains": [
+    "A",
+    "C"
+  ],
+  "proteinmpnn_weights": null,
+  "abmpnn_weights": "/home/ssm-user/sandbox/mmmlm/experiments/trastuzumab_cdrh3/structures/abmpnn.pt",
+  "mpnn_batch_size": 5,
+  "methods": [
+    "beam",
+    "beam_guided",
+    "beam_weakguided",
+    "gibbs",
+    "gibbs_guided",
+    "gibbs_weakguided",
+    "denoising",
+    "beam_oasis_guided",
+    "beam_oasis_weakguided"
+  ],
+  "denoising_temperature": 1.0,
+  "guidance_strength": 1.0,
+  "oasis_db": "/mnt/efs-mount-point/oasis_db/OASis_9mers_v1.db",
+  "oasis_workers": 24,
+  "oasis_cache_path": "/home/ssm-user/sandbox/mmmlm/experiments/trastuzumab_cdrh3/cache/oasis_cache.pkl",
+  "oasis_warm_from": null,
+  "device": null,
+  "accelerator": "NVIDIA A10G",
+  "gpu_procs_at_start": 1
+}

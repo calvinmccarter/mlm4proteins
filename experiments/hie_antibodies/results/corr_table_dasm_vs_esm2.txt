@@ -1,0 +1,8 @@
+Antibody      DASMvApprox_Pearson  DASMvApprox_Spearman  DASMvTrue_Pearson  DASMvTrue_Spearman
+c143                        0.555                 0.535              0.443               0.515
+mab114                      0.579                 0.555              0.535               0.528
+mab114_uca                  0.578                 0.574              0.504               0.554
+medi8852                     0.54                 0.521              0.514               0.506
+medi8852_uca                0.542                 0.536              0.512               0.523
+regn10987                   0.523                 0.523              0.464               0.506
+s309                        0.542                  0.54              0.501               0.541

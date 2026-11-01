@@ -1,0 +1,28 @@
+.venv*/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+*.log
+.cache/
+.DS_Store
+
+# OASis-cache pickle is derivable from the CSVs and grows >100 MB.
+experiments/*/cache/
+
+# Per-run subdirectories under results/ hold partial / superseded CSVs;
+# the canonical, merged outputs live directly under results/.
+experiments/*/results/*/
+experiments/*/results/*_combined.csv
+
+# ESM2 counterpart run outputs (per-antibody + combined parquets, pid/logpath).
+# The masked-marginal cache lives under cache/ (ignored above).
+experiments/*/results_esm2/
+
+# Third-party structure/weight downloads for the structure-conditioned models
+# (1N8Z.pdb from RCSB, abmpnn.pt from Zenodo). Both are fetched by the commands
+# in experiments/trastuzumab_cdrh3's section of README.md.
+experiments/*/structures/
